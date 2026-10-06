@@ -1,0 +1,2435 @@
+// Dados separados da interface: edite este arquivo para atualizar o mapa.
+const DATA = {
+  "areas": [
+    {
+      "id": "programacao",
+      "name": "Programação e algoritmos",
+      "number": "01",
+      "description": "Construir soluções, de uma ideia ao código.",
+      "color": "#118879"
+    },
+    {
+      "id": "engenharia",
+      "name": "Engenharia e qualidade de software",
+      "number": "02",
+      "description": "Projetar, testar e evoluir sistemas confiáveis.",
+      "color": "#467ac6"
+    },
+    {
+      "id": "dados",
+      "name": "Dados e inteligência artificial",
+      "number": "03",
+      "description": "Transformar dados em conhecimento.",
+      "color": "#9974c0"
+    },
+    {
+      "id": "infraestrutura",
+      "name": "Redes e sistemas distribuídos",
+      "number": "04",
+      "description": "Conectar computadores e manter serviços disponíveis.",
+      "color": "#d09832"
+    },
+    {
+      "id": "design",
+      "name": "Interfaces, gráficos e jogos",
+      "number": "05",
+      "description": "Criar experiências digitais para pessoas.",
+      "color": "#d67564"
+    },
+    {
+      "id": "matematica",
+      "name": "Matemática e fundamentos",
+      "number": "06",
+      "description": "Modelar problemas e desenvolver raciocínio.",
+      "color": "#798b48"
+    },
+    {
+      "id": "negocios",
+      "name": "Gestão e negócios de TI",
+      "number": "07",
+      "description": "Conectar tecnologia aos objetivos de organizações.",
+      "color": "#527a9a"
+    },
+    {
+      "id": "automacao",
+      "name": "Hardware, automação e robótica",
+      "number": "08",
+      "description": "Fazer o software interagir com o mundo físico.",
+      "color": "#b98245"
+    },
+    {
+      "id": "educacao",
+      "name": "Tecnologia educacional",
+      "number": "09",
+      "description": "Criar e manter ambientes digitais de aprendizagem.",
+      "color": "#6c9f91"
+    },
+    {
+      "id": "pessoas",
+      "name": "Comunicação, ética e pessoas",
+      "number": "10",
+      "description": "Trabalhar em equipe com responsabilidade e inclusão.",
+      "color": "#a66f94"
+    },
+    {
+      "id": "pesquisa",
+      "name": "Pesquisa e prática profissional",
+      "number": "11",
+      "description": "Investigar, experimentar e compartilhar descobertas.",
+      "color": "#66829e"
+    },
+    {
+      "id": "sustentabilidade",
+      "name": "Tecnologia e sustentabilidade",
+      "number": "12",
+      "description": "Aplicar informação a processos e impactos ambientais.",
+      "color": "#79995d"
+    }
+  ],
+  "courses": [
+    {
+      "id": "085",
+      "name": "Introdução à Programação",
+      "area": "programacao",
+      "summary": "Transformar problemas em algoritmos e programas, usando decisões, repetições e funções.",
+      "period": 1,
+      "hours": 64,
+      "type": "obrigatoria",
+      "page": 3,
+      "careers": [
+        "fullstack",
+        "frontend",
+        "backend",
+        "programador",
+        "mobile",
+        "qa",
+        "analista_dados",
+        "engenheiro_dados",
+        "cientista_dados",
+        "ia",
+        "devops",
+        "jogos",
+        "graficos",
+        "robotica",
+        "automacao",
+        "compiladores"
+      ]
+    },
+    {
+      "id": "044",
+      "name": "Ética e Legislação",
+      "area": "pessoas",
+      "summary": "Avaliar responsabilidades profissionais, privacidade, direitos e impactos sociais da computação.",
+      "period": 1,
+      "hours": 32,
+      "type": "obrigatoria",
+      "page": 4,
+      "careers": [
+        "fullstack",
+        "frontend",
+        "backend",
+        "programador",
+        "engenheiro",
+        "mobile",
+        "qa",
+        "sistemas",
+        "requisitos",
+        "negocios",
+        "dba",
+        "analista_dados",
+        "engenheiro_dados",
+        "cientista_dados",
+        "ia",
+        "redes",
+        "infra",
+        "devops",
+        "cloud",
+        "seguranca",
+        "webdesigner",
+        "ux",
+        "jogos",
+        "graficos",
+        "robotica",
+        "automacao",
+        "edtech",
+        "compiladores",
+        "gestor",
+        "projetos",
+        "produto",
+        "consultor",
+        "empreendedor",
+        "pesquisador",
+        "sustentabilidade"
+      ],
+      "note": "Obrigatória no 1º período, confirmada no ementário e na matriz 2022.1. A tabela principal do PPC omite esta linha; não a excluímos."
+    },
+    {
+      "id": "001",
+      "name": "Introdução a Sistemas de Informação",
+      "area": "programacao",
+      "summary": "Entender como hardware, software, lógica e sistemas de informação se relacionam.",
+      "period": 1,
+      "hours": 64,
+      "type": "obrigatoria",
+      "page": 4,
+      "careers": [
+        "sistemas"
+      ]
+    },
+    {
+      "id": "011",
+      "name": "Princípios da Administração I",
+      "area": "negocios",
+      "summary": "Compreender organizações e os fundamentos de planejamento e administração.",
+      "period": 1,
+      "hours": 64,
+      "type": "obrigatoria",
+      "page": 5,
+      "careers": [
+        "sistemas",
+        "requisitos",
+        "negocios",
+        "gestor",
+        "consultor",
+        "empreendedor"
+      ]
+    },
+    {
+      "id": "007",
+      "name": "Português Instrumental I",
+      "area": "pessoas",
+      "summary": "Ler e escrever textos técnicos com clareza, coesão e adequação ao público.",
+      "period": 1,
+      "hours": 32,
+      "type": "obrigatoria",
+      "page": 6,
+      "careers": [
+        "fullstack",
+        "frontend",
+        "backend",
+        "programador",
+        "engenheiro",
+        "mobile",
+        "qa",
+        "sistemas",
+        "requisitos",
+        "negocios",
+        "dba",
+        "analista_dados",
+        "engenheiro_dados",
+        "cientista_dados",
+        "ia",
+        "redes",
+        "infra",
+        "devops",
+        "cloud",
+        "seguranca",
+        "webdesigner",
+        "ux",
+        "jogos",
+        "graficos",
+        "robotica",
+        "automacao",
+        "edtech",
+        "compiladores",
+        "gestor",
+        "projetos",
+        "produto",
+        "consultor",
+        "empreendedor",
+        "pesquisador",
+        "sustentabilidade"
+      ]
+    },
+    {
+      "id": "101",
+      "name": "Pré-Cálculo",
+      "area": "matematica",
+      "summary": "Entender funções e seus gráficos como base para raciocínio e modelagem matemática.",
+      "period": 1,
+      "hours": 64,
+      "type": "obrigatoria",
+      "page": 7,
+      "careers": [
+        "cientista_dados",
+        "ia",
+        "jogos",
+        "graficos",
+        "robotica",
+        "pesquisador"
+      ]
+    },
+    {
+      "id": "009",
+      "name": "Algoritmos e Estrutura de Dados I",
+      "area": "programacao",
+      "summary": "Escolher listas, pilhas, filas e métodos de busca e ordenação para organizar informações.",
+      "period": 2,
+      "hours": 64,
+      "type": "obrigatoria",
+      "page": 7,
+      "careers": [
+        "fullstack",
+        "frontend",
+        "backend",
+        "programador"
+      ]
+    },
+    {
+      "id": "012",
+      "name": "Cálculo Diferencial e Integral I",
+      "area": "matematica",
+      "summary": "Usar limites, derivadas e integrais na análise de funções e problemas quantitativos.",
+      "period": 2,
+      "hours": 64,
+      "type": "obrigatoria",
+      "page": 8,
+      "careers": [
+        "cientista_dados"
+      ]
+    },
+    {
+      "id": "003",
+      "name": "Inglês Instrumental I",
+      "area": "pessoas",
+      "summary": "Ler documentação e textos técnicos em inglês com estratégias de compreensão.",
+      "period": 2,
+      "hours": 32,
+      "type": "obrigatoria",
+      "page": 9,
+      "careers": [
+        "fullstack",
+        "frontend",
+        "backend",
+        "programador",
+        "engenheiro",
+        "mobile",
+        "qa",
+        "sistemas",
+        "requisitos",
+        "negocios",
+        "dba",
+        "analista_dados",
+        "engenheiro_dados",
+        "cientista_dados",
+        "ia",
+        "redes",
+        "infra",
+        "devops",
+        "cloud",
+        "seguranca",
+        "webdesigner",
+        "ux",
+        "jogos",
+        "graficos",
+        "robotica",
+        "automacao",
+        "edtech",
+        "compiladores",
+        "gestor",
+        "projetos",
+        "produto",
+        "consultor",
+        "empreendedor",
+        "pesquisador",
+        "sustentabilidade"
+      ]
+    },
+    {
+      "id": "002",
+      "name": "Métodos e Técnicas de Pesquisa",
+      "area": "pesquisa",
+      "summary": "Formular perguntas, hipóteses e projetos com métodos de pesquisa científica.",
+      "period": 2,
+      "hours": 32,
+      "type": "obrigatoria",
+      "page": 10,
+      "careers": [
+        "fullstack",
+        "frontend",
+        "backend",
+        "programador",
+        "engenheiro",
+        "mobile",
+        "qa",
+        "sistemas",
+        "requisitos",
+        "negocios",
+        "dba",
+        "analista_dados",
+        "engenheiro_dados",
+        "cientista_dados",
+        "ia",
+        "redes",
+        "infra",
+        "devops",
+        "cloud",
+        "seguranca",
+        "webdesigner",
+        "ux",
+        "jogos",
+        "graficos",
+        "robotica",
+        "automacao",
+        "edtech",
+        "compiladores",
+        "gestor",
+        "projetos",
+        "produto",
+        "consultor",
+        "empreendedor",
+        "pesquisador",
+        "sustentabilidade"
+      ]
+    },
+    {
+      "id": "010",
+      "name": "Programação Orientada a Objetos I",
+      "area": "programacao",
+      "summary": "Modelar soluções com classes, objetos, herança, encapsulamento e polimorfismo.",
+      "period": 2,
+      "hours": 64,
+      "type": "obrigatoria",
+      "page": 10,
+      "careers": [
+        "fullstack",
+        "frontend",
+        "backend",
+        "programador",
+        "engenheiro",
+        "mobile",
+        "qa",
+        "jogos",
+        "robotica",
+        "automacao"
+      ]
+    },
+    {
+      "id": "013",
+      "name": "Sistemas Digitais e Circuitos Combinacionais",
+      "area": "automacao",
+      "summary": "Compreender lógica digital, memória e circuitos que sustentam o hardware.",
+      "period": 2,
+      "hours": 64,
+      "type": "obrigatoria",
+      "page": 11,
+      "careers": [
+        "infra",
+        "robotica",
+        "automacao"
+      ]
+    },
+    {
+      "id": "015",
+      "name": "Algoritmos e Estrutura de Dados II",
+      "area": "programacao",
+      "summary": "Trabalhar com árvores, grafos e estruturas hierárquicas para resolver problemas.",
+      "period": 3,
+      "hours": 64,
+      "type": "obrigatoria",
+      "page": 12,
+      "careers": [
+        "fullstack",
+        "backend",
+        "programador",
+        "engenheiro_dados",
+        "ia",
+        "jogos",
+        "compiladores"
+      ]
+    },
+    {
+      "id": "016",
+      "name": "Banco de Dados I",
+      "area": "dados",
+      "summary": "Modelar bancos relacionais, consultar dados com SQL e preservar sua integridade.",
+      "period": 3,
+      "hours": 64,
+      "type": "obrigatoria",
+      "page": 13,
+      "careers": [
+        "fullstack",
+        "backend",
+        "programador",
+        "engenheiro",
+        "mobile",
+        "sistemas",
+        "dba",
+        "analista_dados",
+        "engenheiro_dados",
+        "cientista_dados",
+        "cloud",
+        "seguranca",
+        "sustentabilidade"
+      ]
+    },
+    {
+      "id": "018",
+      "name": "Contabilidade",
+      "area": "negocios",
+      "summary": "Interpretar patrimônio, receitas e demonstrações para compreender informações empresariais.",
+      "period": 3,
+      "hours": 64,
+      "type": "obrigatoria",
+      "page": 13,
+      "careers": [
+        "negocios",
+        "analista_dados",
+        "empreendedor"
+      ]
+    },
+    {
+      "id": "024",
+      "name": "Arquitetura e Organização de Computadores",
+      "area": "infraestrutura",
+      "summary": "Entender processador, memória, instruções e comunicação entre componentes do computador.",
+      "period": 3,
+      "hours": 64,
+      "type": "obrigatoria",
+      "page": 14,
+      "careers": [
+        "redes",
+        "infra",
+        "robotica",
+        "automacao"
+      ]
+    },
+    {
+      "id": "017",
+      "name": "Engenharia de Software I",
+      "area": "engenharia",
+      "summary": "Levantar requisitos, modelar sistemas e organizar desenvolvimento, testes e evolução de software.",
+      "period": 3,
+      "hours": 64,
+      "type": "obrigatoria",
+      "page": 15,
+      "careers": [
+        "fullstack",
+        "programador",
+        "engenheiro",
+        "mobile",
+        "qa",
+        "sistemas",
+        "requisitos",
+        "negocios",
+        "devops",
+        "webdesigner",
+        "ux",
+        "edtech",
+        "projetos",
+        "produto",
+        "consultor",
+        "empreendedor"
+      ]
+    },
+    {
+      "id": "021",
+      "name": "Álgebra Linear e Geometria Analítica",
+      "area": "matematica",
+      "summary": "Usar vetores, matrizes e transformações em modelos geométricos e computacionais.",
+      "period": 4,
+      "hours": 64,
+      "type": "obrigatoria",
+      "page": 16,
+      "careers": [
+        "cientista_dados",
+        "ia",
+        "jogos",
+        "graficos",
+        "robotica"
+      ]
+    },
+    {
+      "id": "022",
+      "name": "Programação Orientada a Objetos II",
+      "area": "programacao",
+      "summary": "Criar programas com interfaces, persistência, concorrência e padrões de projeto.",
+      "period": 4,
+      "hours": 64,
+      "type": "obrigatoria",
+      "page": 17,
+      "careers": [
+        "fullstack",
+        "frontend",
+        "backend",
+        "programador",
+        "engenheiro",
+        "mobile",
+        "devops",
+        "graficos",
+        "compiladores"
+      ]
+    },
+    {
+      "id": "020",
+      "name": "Matemática Discreta",
+      "area": "matematica",
+      "summary": "Aplicar conjuntos, provas e grafos ao raciocínio e à solução de problemas computacionais.",
+      "period": 4,
+      "hours": 64,
+      "type": "obrigatoria",
+      "page": 17,
+      "careers": [
+        "compiladores"
+      ]
+    },
+    {
+      "id": "030",
+      "name": "Sistemas Operacionais",
+      "area": "infraestrutura",
+      "summary": "Entender processos, memória, arquivos e sincronização em sistemas operacionais.",
+      "period": 4,
+      "hours": 64,
+      "type": "obrigatoria",
+      "page": 18,
+      "careers": [
+        "dba",
+        "engenheiro_dados",
+        "redes",
+        "infra",
+        "devops",
+        "cloud",
+        "seguranca",
+        "edtech"
+      ]
+    },
+    {
+      "id": "023",
+      "name": "Programação Web",
+      "area": "programacao",
+      "summary": "Desenvolver aplicações web no cliente e no servidor, incluindo interfaces e acesso a dados.",
+      "period": 4,
+      "hours": 64,
+      "type": "obrigatoria",
+      "page": 19,
+      "careers": [
+        "fullstack",
+        "frontend",
+        "backend",
+        "programador",
+        "webdesigner",
+        "ux",
+        "edtech"
+      ]
+    },
+    {
+      "id": "041",
+      "name": "Engenharia de Software II",
+      "area": "engenharia",
+      "summary": "Projetar sistemas complexos, APIs, reuso e práticas de integração entre desenvolvimento e operação.",
+      "period": 5,
+      "hours": 64,
+      "type": "obrigatoria",
+      "page": 20,
+      "careers": [
+        "fullstack",
+        "backend",
+        "engenheiro",
+        "mobile",
+        "qa",
+        "sistemas",
+        "requisitos",
+        "devops",
+        "cloud",
+        "seguranca",
+        "compiladores"
+      ]
+    },
+    {
+      "id": "031",
+      "name": "Probabilidade e Estatística",
+      "area": "matematica",
+      "summary": "Analisar dados e incerteza com probabilidades, regressão e testes de hipóteses.",
+      "period": 5,
+      "hours": 64,
+      "type": "obrigatoria",
+      "page": 21,
+      "careers": [
+        "qa",
+        "negocios",
+        "analista_dados",
+        "cientista_dados",
+        "ia",
+        "produto",
+        "pesquisador",
+        "sustentabilidade"
+      ]
+    },
+    {
+      "id": "029",
+      "name": "Redes de Computadores I",
+      "area": "infraestrutura",
+      "summary": "Compreender redes, protocolos, endereçamento, roteamento e comunicação por sockets.",
+      "period": 5,
+      "hours": 64,
+      "type": "obrigatoria",
+      "page": 21,
+      "careers": [
+        "dba",
+        "engenheiro_dados",
+        "redes",
+        "infra",
+        "devops",
+        "cloud",
+        "seguranca",
+        "automacao",
+        "edtech"
+      ]
+    },
+    {
+      "id": "019",
+      "name": "Governança e Gestão da Informação",
+      "area": "negocios",
+      "summary": "Alinhar decisões de TI aos objetivos da organização e gerir informação e conhecimento.",
+      "period": 5,
+      "hours": 64,
+      "type": "obrigatoria",
+      "page": 22,
+      "careers": [
+        "sistemas",
+        "negocios",
+        "analista_dados",
+        "redes",
+        "cloud",
+        "seguranca",
+        "gestor",
+        "projetos",
+        "produto",
+        "consultor",
+        "sustentabilidade"
+      ]
+    },
+    {
+      "id": "038",
+      "name": "Projeto e Análise de Algoritmos",
+      "area": "programacao",
+      "summary": "Avaliar eficiência e escolher estratégias de projeto de algoritmos para problemas complexos.",
+      "period": 6,
+      "hours": 64,
+      "type": "obrigatoria",
+      "page": 23,
+      "careers": [
+        "backend",
+        "programador",
+        "engenheiro",
+        "engenheiro_dados",
+        "cientista_dados",
+        "ia",
+        "jogos",
+        "compiladores",
+        "pesquisador"
+      ]
+    },
+    {
+      "id": "039",
+      "name": "Programação para Dispositivos Móveis",
+      "area": "programacao",
+      "summary": "Criar aplicativos móveis com eventos, interfaces, armazenamento e comunicação com servidores.",
+      "period": 6,
+      "hours": 64,
+      "type": "obrigatoria",
+      "page": 24,
+      "careers": [
+        "programador",
+        "mobile"
+      ]
+    },
+    {
+      "id": "036",
+      "name": "Sistemas de Apoio à Decisão",
+      "area": "negocios",
+      "summary": "Relacionar sistemas corporativos e informação ao apoio das decisões nas organizações.",
+      "period": 6,
+      "hours": 64,
+      "type": "obrigatoria",
+      "page": 25,
+      "careers": [
+        "sistemas",
+        "requisitos",
+        "negocios",
+        "analista_dados",
+        "cientista_dados",
+        "automacao",
+        "gestor",
+        "produto",
+        "consultor",
+        "sustentabilidade"
+      ]
+    },
+    {
+      "id": "037",
+      "name": "Sistemas Distribuídos",
+      "area": "infraestrutura",
+      "summary": "Projetar comunicação, sincronização, segurança e tolerância a falhas entre sistemas distribuídos.",
+      "period": 6,
+      "hours": 64,
+      "type": "obrigatoria",
+      "page": 26,
+      "careers": [
+        "fullstack",
+        "backend",
+        "engenheiro",
+        "mobile",
+        "dba",
+        "engenheiro_dados",
+        "ia",
+        "redes",
+        "infra",
+        "devops",
+        "cloud",
+        "seguranca",
+        "automacao"
+      ]
+    },
+    {
+      "id": "026",
+      "name": "Interface Humano Computador",
+      "area": "design",
+      "summary": "Projetar e avaliar interfaces considerando usuários, protótipos, usabilidade e desenho universal.",
+      "period": 7,
+      "hours": 64,
+      "type": "obrigatoria",
+      "page": 26,
+      "careers": [
+        "fullstack",
+        "frontend",
+        "mobile",
+        "qa",
+        "sistemas",
+        "requisitos",
+        "webdesigner",
+        "ux",
+        "jogos",
+        "edtech",
+        "produto"
+      ]
+    },
+    {
+      "id": "040",
+      "name": "Gestão de Projetos",
+      "area": "negocios",
+      "summary": "Planejar escopo, tempo, custos, equipes e riscos de projetos.",
+      "period": 7,
+      "hours": 32,
+      "type": "obrigatoria",
+      "page": 27,
+      "careers": [
+        "redes",
+        "devops",
+        "cloud",
+        "gestor",
+        "projetos",
+        "produto",
+        "consultor",
+        "empreendedor"
+      ]
+    },
+    {
+      "id": "034",
+      "name": "Inteligência Artificial",
+      "area": "dados",
+      "summary": "Aplicar busca, representação do conhecimento, aprendizado de máquina e redes neurais.",
+      "period": 7,
+      "hours": 64,
+      "type": "obrigatoria",
+      "page": 28,
+      "careers": [
+        "cientista_dados",
+        "ia",
+        "jogos",
+        "graficos",
+        "robotica",
+        "pesquisador"
+      ]
+    },
+    {
+      "id": "091",
+      "name": "Trabalho de Conclusão de Curso I",
+      "area": "pesquisa",
+      "summary": "Planejar e desenvolver uma investigação orientada para integrar os conhecimentos do curso.",
+      "period": 7,
+      "hours": 64,
+      "type": "obrigatoria",
+      "page": 29,
+      "careers": [
+        "fullstack",
+        "frontend",
+        "backend",
+        "programador",
+        "engenheiro",
+        "mobile",
+        "qa",
+        "sistemas",
+        "requisitos",
+        "negocios",
+        "dba",
+        "analista_dados",
+        "engenheiro_dados",
+        "cientista_dados",
+        "ia",
+        "redes",
+        "infra",
+        "devops",
+        "cloud",
+        "seguranca",
+        "webdesigner",
+        "ux",
+        "jogos",
+        "graficos",
+        "robotica",
+        "automacao",
+        "edtech",
+        "compiladores",
+        "gestor",
+        "projetos",
+        "produto",
+        "consultor",
+        "empreendedor",
+        "pesquisador",
+        "sustentabilidade"
+      ]
+    },
+    {
+      "id": "102",
+      "name": "Empreendedorismo",
+      "area": "negocios",
+      "summary": "Identificar oportunidades e estruturar negócios, inovação e iniciativas sustentáveis.",
+      "period": 8,
+      "hours": 64,
+      "type": "obrigatoria",
+      "page": 30,
+      "careers": [
+        "produto",
+        "empreendedor",
+        "sustentabilidade"
+      ]
+    },
+    {
+      "id": "103",
+      "name": "Qualidade de Software",
+      "area": "engenharia",
+      "summary": "Avaliar qualidade, defeitos e métricas; planejar e executar testes de software.",
+      "period": 8,
+      "hours": 64,
+      "type": "obrigatoria",
+      "page": 31,
+      "careers": [
+        "fullstack",
+        "frontend",
+        "backend",
+        "engenheiro",
+        "mobile",
+        "qa",
+        "dba",
+        "devops",
+        "seguranca",
+        "projetos"
+      ]
+    },
+    {
+      "id": "092",
+      "name": "Trabalho de Conclusão de Curso II",
+      "area": "pesquisa",
+      "summary": "Consolidar e comunicar resultados de um trabalho orientado com metodologia científica.",
+      "period": 8,
+      "hours": 64,
+      "type": "obrigatoria",
+      "page": 32,
+      "careers": [
+        "fullstack",
+        "frontend",
+        "backend",
+        "programador",
+        "engenheiro",
+        "mobile",
+        "qa",
+        "sistemas",
+        "requisitos",
+        "negocios",
+        "dba",
+        "analista_dados",
+        "engenheiro_dados",
+        "cientista_dados",
+        "ia",
+        "redes",
+        "infra",
+        "devops",
+        "cloud",
+        "seguranca",
+        "webdesigner",
+        "ux",
+        "jogos",
+        "graficos",
+        "robotica",
+        "automacao",
+        "edtech",
+        "compiladores",
+        "gestor",
+        "projetos",
+        "produto",
+        "consultor",
+        "empreendedor",
+        "pesquisador",
+        "sustentabilidade"
+      ]
+    },
+    {
+      "id": "035",
+      "name": "Administração Financeira I",
+      "area": "negocios",
+      "summary": "Compreender financiamento, capital de giro e instrumentos de gestão financeira.",
+      "period": 0,
+      "hours": 64,
+      "type": "optativa",
+      "page": 33,
+      "careers": [
+        "negocios",
+        "gestor",
+        "projetos",
+        "consultor",
+        "empreendedor"
+      ]
+    },
+    {
+      "id": "057",
+      "name": "Avaliação de Empresas",
+      "area": "negocios",
+      "summary": "Avaliar empresas e projetos por geração de valor e análise de fluxos de caixa.",
+      "period": 0,
+      "hours": 64,
+      "type": "optativa",
+      "page": 33,
+      "careers": [
+        "produto",
+        "empreendedor"
+      ]
+    },
+    {
+      "id": "033",
+      "name": "Banco de Dados II",
+      "area": "dados",
+      "summary": "Organizar dados em disco e recuperar informações com consultas e técnicas de implementação de SGBDs.",
+      "period": 0,
+      "hours": 64,
+      "type": "optativa",
+      "page": 34,
+      "careers": [
+        "fullstack",
+        "backend",
+        "dba",
+        "engenheiro_dados"
+      ],
+      "note": "O campo Ementa está vazio nos documentos. A descrição do mapa foi baseada nos objetivos da disciplina (ementário p. 34; PPC p. 71)."
+    },
+    {
+      "id": "079",
+      "name": "Cálculo Numérico",
+      "area": "matematica",
+      "summary": "Implementar métodos numéricos e avaliar erros de aproximação, interpolação e integração.",
+      "period": 0,
+      "hours": 64,
+      "type": "optativa",
+      "page": 35,
+      "careers": [
+        "cientista_dados",
+        "ia",
+        "graficos"
+      ]
+    },
+    {
+      "id": "025",
+      "name": "Comportamento Organizacional",
+      "area": "pessoas",
+      "summary": "Compreender motivação, liderança, comunicação, negociação e cultura das equipes.",
+      "period": 0,
+      "hours": 64,
+      "type": "optativa",
+      "page": 36,
+      "careers": [
+        "requisitos",
+        "ux",
+        "gestor",
+        "projetos",
+        "produto"
+      ]
+    },
+    {
+      "id": "070",
+      "name": "Computação Gráfica",
+      "area": "design",
+      "summary": "Criar gráficos 2D e 3D com transformações, iluminação, texturas e animação.",
+      "period": 0,
+      "hours": 64,
+      "type": "optativa",
+      "page": 36,
+      "careers": [
+        "frontend",
+        "webdesigner",
+        "ux",
+        "jogos",
+        "graficos",
+        "edtech"
+      ]
+    },
+    {
+      "id": "081",
+      "name": "Consultoria Empresarial",
+      "area": "negocios",
+      "summary": "Identificar necessidades de clientes, realizar diagnósticos e propor soluções de consultoria.",
+      "period": 0,
+      "hours": 64,
+      "type": "optativa",
+      "page": 37,
+      "careers": [
+        "requisitos",
+        "negocios",
+        "consultor",
+        "empreendedor"
+      ]
+    },
+    {
+      "id": "049",
+      "name": "Gerência de Projetos de Software",
+      "area": "engenharia",
+      "summary": "Estimar prazos e esforço, gerenciar riscos, configuração e projetos ágeis de software.",
+      "period": 0,
+      "hours": 64,
+      "type": "optativa",
+      "page": 38,
+      "careers": [
+        "engenheiro",
+        "sistemas",
+        "requisitos",
+        "projetos"
+      ]
+    },
+    {
+      "id": "055",
+      "name": "Gestão Ambiental",
+      "area": "sustentabilidade",
+      "summary": "Aplicar instrumentos de gestão ambiental e melhoria de processos nas organizações.",
+      "period": 0,
+      "hours": 64,
+      "type": "optativa",
+      "page": 38,
+      "careers": [
+        "sustentabilidade"
+      ]
+    },
+    {
+      "id": "054",
+      "name": "Gestão da Inovação",
+      "area": "negocios",
+      "summary": "Organizar processos de inovação e relacioná-los à estratégia empresarial.",
+      "period": 0,
+      "hours": 64,
+      "type": "optativa",
+      "page": 39,
+      "careers": [
+        "produto",
+        "empreendedor"
+      ]
+    },
+    {
+      "id": "094",
+      "name": "Gestão de Recursos Humanos",
+      "area": "pessoas",
+      "summary": "Planejar seleção, treinamento, avaliação e desenvolvimento de pessoas nas organizações.",
+      "period": 0,
+      "hours": 64,
+      "type": "optativa",
+      "page": 40,
+      "careers": [
+        "gestor",
+        "projetos"
+      ]
+    },
+    {
+      "id": "060",
+      "name": "Gestão de Serviços",
+      "area": "negocios",
+      "summary": "Entender serviços, satisfação do cliente e processos de prestação de serviços.",
+      "period": 0,
+      "hours": 64,
+      "type": "optativa",
+      "page": 40,
+      "careers": [
+        "infra",
+        "gestor",
+        "projetos",
+        "consultor",
+        "empreendedor"
+      ]
+    },
+    {
+      "id": "059",
+      "name": "Gestão do Conhecimento",
+      "area": "negocios",
+      "summary": "Organizar aprendizagem, competências e circulação de conhecimento nas empresas.",
+      "period": 0,
+      "hours": 64,
+      "type": "optativa",
+      "page": 41,
+      "careers": [
+        "negocios",
+        "gestor",
+        "consultor"
+      ]
+    },
+    {
+      "id": "006",
+      "name": "Inglês Instrumental II",
+      "area": "pessoas",
+      "summary": "Produzir textos técnicos e científicos em inglês.",
+      "period": 0,
+      "hours": 32,
+      "type": "optativa",
+      "page": 42,
+      "careers": [
+        "pesquisador"
+      ]
+    },
+    {
+      "id": "083",
+      "name": "Inglês para Negócios I",
+      "area": "pessoas",
+      "summary": "Comunicar-se em inglês em situações de trabalho e negócios.",
+      "period": 0,
+      "hours": 32,
+      "type": "optativa",
+      "page": 42,
+      "careers": [
+        "empreendedor"
+      ]
+    },
+    {
+      "id": "084",
+      "name": "Inglês para Negócios II",
+      "area": "pessoas",
+      "summary": "Praticar comunicação em inglês para o ambiente profissional e social.",
+      "period": 0,
+      "hours": 32,
+      "type": "optativa",
+      "page": 43,
+      "careers": [
+        "empreendedor"
+      ]
+    },
+    {
+      "id": "075",
+      "name": "Inteligência Competitiva",
+      "area": "negocios",
+      "summary": "Analisar informações e cenários para apoiar decisões e estratégias competitivas.",
+      "period": 0,
+      "hours": 32,
+      "type": "optativa",
+      "page": 44,
+      "careers": [
+        "negocios",
+        "analista_dados",
+        "produto",
+        "consultor",
+        "empreendedor"
+      ]
+    },
+    {
+      "id": "104",
+      "name": "Libras",
+      "area": "pessoas",
+      "summary": "Conhecer Libras e fundamentos da educação de surdos para favorecer comunicação e inclusão.",
+      "period": 0,
+      "hours": 64,
+      "type": "optativa",
+      "page": 45,
+      "careers": [
+        "frontend",
+        "webdesigner",
+        "ux",
+        "edtech"
+      ]
+    },
+    {
+      "id": "028",
+      "name": "Linguagens Formais e Autômatos",
+      "area": "programacao",
+      "summary": "Compreender autômatos, gramáticas, computabilidade e fundamentos de compiladores.",
+      "period": 0,
+      "hours": 64,
+      "type": "optativa",
+      "page": 46,
+      "careers": [
+        "compiladores"
+      ]
+    },
+    {
+      "id": "050",
+      "name": "Logística Reversa",
+      "area": "sustentabilidade",
+      "summary": "Entender retorno de produtos, resíduos e cadeias de logística com sustentabilidade.",
+      "period": 0,
+      "hours": 32,
+      "type": "optativa",
+      "page": 46,
+      "careers": [
+        "sustentabilidade"
+      ]
+    },
+    {
+      "id": "068",
+      "name": "Mineração de Dados",
+      "area": "dados",
+      "summary": "Descobrir padrões usando associação, classificação, regressão e agrupamento de dados.",
+      "period": 0,
+      "hours": 64,
+      "type": "optativa",
+      "page": 47,
+      "careers": [
+        "analista_dados",
+        "engenheiro_dados",
+        "cientista_dados",
+        "ia",
+        "graficos",
+        "sustentabilidade"
+      ]
+    },
+    {
+      "id": "008",
+      "name": "Português Instrumental II",
+      "area": "pessoas",
+      "summary": "Aprimorar produção, revisão e comunicação de textos técnicos e acadêmicos.",
+      "period": 0,
+      "hours": 32,
+      "type": "optativa",
+      "page": 48,
+      "careers": [
+        "pesquisador"
+      ]
+    },
+    {
+      "id": "095",
+      "name": "Processamento de Imagens",
+      "area": "design",
+      "summary": "Processar imagens por filtros, segmentação, reconstrução e outras transformações digitais.",
+      "period": 0,
+      "hours": 64,
+      "type": "optativa",
+      "page": 49,
+      "careers": [
+        "ia",
+        "jogos",
+        "graficos"
+      ]
+    },
+    {
+      "id": "073",
+      "name": "Qualidade de Vida no Trabalho",
+      "area": "pessoas",
+      "summary": "Avaliar bem-estar, ergonomia e qualidade de vida em ambientes de trabalho.",
+      "period": 0,
+      "hours": 64,
+      "type": "optativa",
+      "page": 50,
+      "careers": [
+        "gestor"
+      ]
+    },
+    {
+      "id": "032",
+      "name": "Redes de Computadores II",
+      "area": "infraestrutura",
+      "summary": "Aprofundar transmissão, redes sem fio, roteamento e comunicação multimídia.",
+      "period": 0,
+      "hours": 64,
+      "type": "optativa",
+      "page": 51,
+      "careers": [
+        "redes",
+        "infra",
+        "cloud",
+        "seguranca"
+      ]
+    },
+    {
+      "id": "074",
+      "name": "Sistemas de Garantia de Qualidade",
+      "area": "engenharia",
+      "summary": "Aplicar sistemas e ferramentas de controle da qualidade a processos organizacionais.",
+      "period": 0,
+      "hours": 64,
+      "type": "optativa",
+      "page": 51,
+      "careers": [
+        "qa",
+        "gestor",
+        "sustentabilidade"
+      ],
+      "note": "PPC e ementário: 64 h. A tabela da matriz 2022.1 indica 32 h e usa o nome Sistemas de Gestão da Qualidade. O mapa conserva a carga e o nome do PPC/ementário."
+    },
+    {
+      "id": "027",
+      "name": "Teoria dos Grafos",
+      "area": "matematica",
+      "summary": "Modelar problemas de conectividade, caminhos, árvores e coloração com grafos.",
+      "period": 0,
+      "hours": 64,
+      "type": "optativa",
+      "page": 52,
+      "careers": [
+        "programador",
+        "engenheiro",
+        "ia",
+        "redes",
+        "compiladores"
+      ]
+    },
+    {
+      "id": "063",
+      "name": "Tópicos Avançados em Banco de Dados",
+      "area": "dados",
+      "summary": "Aprofundar transações, concorrência, consultas, dados distribuídos e armazéns de dados.",
+      "period": 0,
+      "hours": 64,
+      "type": "optativa",
+      "page": 53,
+      "careers": [
+        "fullstack",
+        "backend",
+        "dba",
+        "analista_dados",
+        "engenheiro_dados",
+        "cientista_dados"
+      ]
+    },
+    {
+      "id": "078",
+      "name": "Tópicos Avançados em Engenharia de Software",
+      "area": "engenharia",
+      "summary": "Usar métricas e métodos avançados para gerir e melhorar a qualidade do software.",
+      "period": 0,
+      "hours": 64,
+      "type": "optativa",
+      "page": 54,
+      "careers": [
+        "engenheiro",
+        "qa",
+        "edtech",
+        "projetos"
+      ]
+    },
+    {
+      "id": "096",
+      "name": "Tópicos Avançados em Inteligência Artificial",
+      "area": "dados",
+      "summary": "Experimentar arquiteturas cognitivas no controle de agentes e criaturas artificiais.",
+      "period": 0,
+      "hours": 64,
+      "type": "optativa",
+      "page": 54,
+      "careers": [
+        "ia",
+        "jogos",
+        "robotica",
+        "pesquisador"
+      ]
+    },
+    {
+      "id": "067",
+      "name": "Tópicos Avançados em Tecnologias de Educação à Distância",
+      "area": "educacao",
+      "summary": "Compreender plataformas de aprendizagem, infraestrutura e recursos da educação a distância.",
+      "period": 0,
+      "hours": 64,
+      "type": "optativa",
+      "page": 55,
+      "careers": [
+        "edtech"
+      ]
+    },
+    {
+      "id": "097",
+      "name": "Tópicos em Desenvolvimento de Jogos Digitais",
+      "area": "design",
+      "summary": "Desenvolver jogos com motores, animação, colisões, simulação física e inteligência artificial.",
+      "period": 0,
+      "hours": 64,
+      "type": "optativa",
+      "page": 56,
+      "careers": [
+        "jogos",
+        "graficos",
+        "edtech"
+      ]
+    },
+    {
+      "id": "064",
+      "name": "Tópicos Especiais em Algoritmos",
+      "area": "programacao",
+      "summary": "Projetar e analisar algoritmos avançados para diferentes domínios de problemas.",
+      "period": 0,
+      "hours": 64,
+      "type": "optativa",
+      "page": 57,
+      "careers": [
+        "programador",
+        "compiladores",
+        "pesquisador"
+      ]
+    },
+    {
+      "id": "098",
+      "name": "Tópicos Especiais em Automação",
+      "area": "automacao",
+      "summary": "Entender circuitos, comandos elétricos, CLPs e supervisão de processos industriais.",
+      "period": 0,
+      "hours": 64,
+      "type": "optativa",
+      "page": 57,
+      "careers": [
+        "robotica",
+        "automacao"
+      ]
+    },
+    {
+      "id": "065",
+      "name": "Tópicos Especiais em Desenvolvimento de Software",
+      "area": "engenharia",
+      "summary": "Explorar técnicas, metodologias e paradigmas avançados de desenvolvimento de sistemas.",
+      "period": 0,
+      "hours": 64,
+      "type": "optativa",
+      "page": 58,
+      "careers": [
+        "fullstack",
+        "frontend",
+        "backend",
+        "programador",
+        "engenheiro",
+        "mobile",
+        "sistemas"
+      ]
+    },
+    {
+      "id": "099",
+      "name": "Tópicos Especiais em Robótica",
+      "area": "automacao",
+      "summary": "Programar robôs e integrar sensores, atuadores e sistemas de controle elementares.",
+      "period": 0,
+      "hours": 64,
+      "type": "optativa",
+      "page": 59,
+      "careers": [
+        "robotica",
+        "automacao"
+      ]
+    },
+    {
+      "id": "066",
+      "name": "Tópicos Especiais em Sistemas Computacionais e Redes de Computadores",
+      "area": "infraestrutura",
+      "summary": "Aprofundar sistemas operacionais, arquitetura de computadores e redes.",
+      "period": 0,
+      "hours": 64,
+      "type": "optativa",
+      "page": 59,
+      "careers": [
+        "redes",
+        "infra",
+        "devops",
+        "cloud",
+        "seguranca"
+      ]
+    },
+    {
+      "id": "PI",
+      "name": "Projeto Integrador",
+      "area": "pesquisa",
+      "summary": "Aplicar e integrar conhecimentos em projetos de ensino, extensão ou pesquisa com problemas reais.",
+      "period": 0,
+      "hours": 320,
+      "type": "componente",
+      "page": null,
+      "ppcPage": 30,
+      "careers": [
+        "fullstack",
+        "frontend",
+        "backend",
+        "programador",
+        "engenheiro",
+        "mobile",
+        "qa",
+        "sistemas",
+        "requisitos",
+        "negocios",
+        "dba",
+        "analista_dados",
+        "engenheiro_dados",
+        "cientista_dados",
+        "ia",
+        "redes",
+        "infra",
+        "devops",
+        "cloud",
+        "seguranca",
+        "webdesigner",
+        "ux",
+        "jogos",
+        "graficos",
+        "robotica",
+        "automacao",
+        "edtech",
+        "compiladores",
+        "gestor",
+        "projetos",
+        "produto",
+        "consultor",
+        "empreendedor",
+        "pesquisador",
+        "sustentabilidade"
+      ]
+    },
+    {
+      "id": "AC",
+      "name": "Atividades Complementares",
+      "area": "pesquisa",
+      "summary": "Ampliar a formação por eventos, monitoria, pesquisa, extensão e outras atividades validadas.",
+      "period": 0,
+      "hours": 220,
+      "type": "componente",
+      "page": null,
+      "ppcPage": 110,
+      "careers": [
+        "fullstack",
+        "frontend",
+        "backend",
+        "programador",
+        "engenheiro",
+        "mobile",
+        "qa",
+        "sistemas",
+        "requisitos",
+        "negocios",
+        "dba",
+        "analista_dados",
+        "engenheiro_dados",
+        "cientista_dados",
+        "ia",
+        "redes",
+        "infra",
+        "devops",
+        "cloud",
+        "seguranca",
+        "webdesigner",
+        "ux",
+        "jogos",
+        "graficos",
+        "robotica",
+        "automacao",
+        "edtech",
+        "compiladores",
+        "gestor",
+        "projetos",
+        "produto",
+        "consultor",
+        "empreendedor",
+        "pesquisador",
+        "sustentabilidade"
+      ]
+    }
+  ],
+  "careers": [
+    {
+      "id": "fullstack",
+      "name": "Desenvolvedor Full-Stack",
+      "description": "Cria a interface, a lógica do servidor e a integração com dados de uma aplicação web.",
+      "core": [
+        "085",
+        "009",
+        "010",
+        "016",
+        "017",
+        "022",
+        "023",
+        "041",
+        "026",
+        "103"
+      ],
+      "support": [
+        "015",
+        "037",
+        "033",
+        "063",
+        "065"
+      ],
+      "project": "Um sistema de empréstimo de livros com interface, cadastro e consultas.",
+      "extra": "Controle de versão, autenticação, implantação e prática com uma stack web.",
+      "official": false
+    },
+    {
+      "id": "frontend",
+      "name": "Desenvolvedor Front-End",
+      "description": "Constrói as telas e interações que as pessoas utilizam no navegador.",
+      "core": [
+        "085",
+        "009",
+        "010",
+        "023",
+        "026",
+        "103"
+      ],
+      "support": [
+        "022",
+        "070",
+        "104",
+        "065"
+      ],
+      "project": "Um portal acessível com navegação por teclado e layout adaptável.",
+      "extra": "Acessibilidade web, ferramentas de interface e testes no navegador.",
+      "official": false
+    },
+    {
+      "id": "backend",
+      "name": "Desenvolvedor Back-End",
+      "description": "Desenvolve regras de negócio, serviços e acesso a bancos de dados.",
+      "core": [
+        "085",
+        "009",
+        "010",
+        "015",
+        "016",
+        "022",
+        "023",
+        "041",
+        "037",
+        "103"
+      ],
+      "support": [
+        "038",
+        "033",
+        "063",
+        "065"
+      ],
+      "project": "Uma API de reservas com validações e armazenamento de dados.",
+      "extra": "Autenticação, observabilidade, implantação e segurança de APIs.",
+      "official": false
+    },
+    {
+      "id": "programador",
+      "name": "Programador",
+      "description": "Implementa e mantém programas para resolver problemas em diferentes contextos.",
+      "core": [
+        "085",
+        "009",
+        "010",
+        "015",
+        "022",
+        "038"
+      ],
+      "support": [
+        "016",
+        "017",
+        "023",
+        "039",
+        "064",
+        "065",
+        "027"
+      ],
+      "project": "Um organizador de tarefas com persistência e busca.",
+      "extra": "Prática contínua em uma linguagem, versionamento e depuração.",
+      "official": true
+    },
+    {
+      "id": "engenheiro",
+      "name": "Engenheiro de Software",
+      "description": "Projeta e evolui sistemas considerando arquitetura, processos e qualidade.",
+      "core": [
+        "017",
+        "041",
+        "010",
+        "022",
+        "103",
+        "038"
+      ],
+      "support": [
+        "049",
+        "078",
+        "065",
+        "037",
+        "016",
+        "027"
+      ],
+      "project": "Um sistema documentado com arquitetura, testes e processo de evolução.",
+      "extra": "Experiência em projetos reais e aprofundamento em arquitetura.",
+      "official": true
+    },
+    {
+      "id": "mobile",
+      "name": "Desenvolvedor Mobile",
+      "description": "Cria aplicativos para smartphones e tablets.",
+      "core": [
+        "085",
+        "010",
+        "022",
+        "016",
+        "039",
+        "026",
+        "103"
+      ],
+      "support": [
+        "017",
+        "041",
+        "037",
+        "065"
+      ],
+      "project": "Um aplicativo de estudos que armazena tarefas e se comunica com um servidor.",
+      "extra": "Ecossistema móvel, publicação de aplicativos e testes em dispositivos.",
+      "official": false
+    },
+    {
+      "id": "qa",
+      "name": "Analista de Teste / QA",
+      "description": "Planeja e executa verificações para encontrar falhas e avaliar a qualidade do software.",
+      "core": [
+        "017",
+        "041",
+        "103"
+      ],
+      "support": [
+        "085",
+        "010",
+        "026",
+        "031",
+        "078",
+        "074"
+      ],
+      "project": "Um plano de testes de um sistema, com casos, resultados e defeitos registrados.",
+      "extra": "Automação de testes, integração contínua e técnicas de teste especializado.",
+      "official": true
+    },
+    {
+      "id": "sistemas",
+      "name": "Analista de Sistemas",
+      "description": "Traduz necessidades de uma organização em modelos e soluções de informação.",
+      "core": [
+        "001",
+        "017",
+        "041",
+        "016",
+        "036",
+        "019"
+      ],
+      "support": [
+        "011",
+        "026",
+        "049",
+        "065"
+      ],
+      "project": "Uma análise e um protótipo para melhorar o atendimento de uma organização.",
+      "extra": "Integração de sistemas, modelagem de processos e prática com usuários.",
+      "official": true
+    },
+    {
+      "id": "requisitos",
+      "name": "Analista de Requisitos",
+      "description": "Investiga necessidades, documenta requisitos e ajuda a validar o que será construído.",
+      "core": [
+        "017",
+        "026",
+        "036"
+      ],
+      "support": [
+        "041",
+        "011",
+        "025",
+        "081",
+        "049"
+      ],
+      "project": "Entrevistas, histórias de uso e requisitos de um sistema escolar.",
+      "extra": "Técnicas de facilitação, negociação e validação de requisitos.",
+      "official": true
+    },
+    {
+      "id": "negocios",
+      "name": "Analista de Negócios",
+      "description": "Relaciona processos, necessidades e informação às decisões de negócio.",
+      "core": [
+        "011",
+        "018",
+        "036",
+        "019"
+      ],
+      "support": [
+        "017",
+        "031",
+        "075",
+        "081",
+        "059",
+        "035"
+      ],
+      "project": "Um diagnóstico de um processo com indicadores e oportunidades de melhoria.",
+      "extra": "Conhecimento de um setor de negócio e ferramentas de análise de processos.",
+      "official": true
+    },
+    {
+      "id": "dba",
+      "name": "Administrador de Banco de Dados",
+      "description": "Organiza e administra o armazenamento e a recuperação dos dados de sistemas.",
+      "core": [
+        "016",
+        "033",
+        "063"
+      ],
+      "support": [
+        "030",
+        "037",
+        "029",
+        "103"
+      ],
+      "project": "Um banco de dados com consultas, transações e análise de desempenho.",
+      "extra": "Administração prática de SGBDs, backup, recuperação e segurança de dados.",
+      "official": true
+    },
+    {
+      "id": "analista_dados",
+      "name": "Analista de Dados / BI",
+      "description": "Analisa informações e constrói indicadores para apoiar decisões.",
+      "core": [
+        "016",
+        "031",
+        "036",
+        "019"
+      ],
+      "support": [
+        "068",
+        "063",
+        "018",
+        "075",
+        "085"
+      ],
+      "project": "Um painel com indicadores e interpretação dos resultados de um conjunto de dados.",
+      "extra": "Ferramentas de visualização, limpeza de dados e comunicação de resultados.",
+      "official": false
+    },
+    {
+      "id": "engenheiro_dados",
+      "name": "Engenheiro de Dados",
+      "description": "Integra e organiza fluxos de dados para uso em sistemas e análises.",
+      "core": [
+        "016",
+        "033",
+        "063",
+        "037",
+        "085",
+        "015"
+      ],
+      "support": [
+        "029",
+        "030",
+        "038",
+        "068"
+      ],
+      "project": "Um fluxo de integração de dados com validação e armazenamento.",
+      "extra": "Pipelines, orquestração, plataformas de dados e operação em escala.",
+      "official": false
+    },
+    {
+      "id": "cientista_dados",
+      "name": "Cientista de Dados",
+      "description": "Investiga padrões e constrói modelos estatísticos e de aprendizado a partir de dados.",
+      "core": [
+        "031",
+        "021",
+        "034",
+        "068",
+        "016",
+        "085"
+      ],
+      "support": [
+        "012",
+        "079",
+        "038",
+        "036",
+        "063",
+        "101"
+      ],
+      "project": "Um experimento que compara modelos de previsão e suas limitações.",
+      "extra": "Estatística aprofundada, preparação de dados e validação de modelos.",
+      "official": false
+    },
+    {
+      "id": "ia",
+      "name": "Desenvolvedor de IA / Aprendizado de Máquina",
+      "description": "Implementa sistemas que usam busca, conhecimento ou aprendizado para resolver problemas.",
+      "core": [
+        "034",
+        "068",
+        "031",
+        "021",
+        "085",
+        "038"
+      ],
+      "support": [
+        "096",
+        "095",
+        "015",
+        "079",
+        "037",
+        "027",
+        "101"
+      ],
+      "project": "Um classificador com avaliação de resultados e discussão de vieses.",
+      "extra": "Implantação e monitoramento de modelos, avaliação e estudo especializado.",
+      "official": false
+    },
+    {
+      "id": "redes",
+      "name": "Administrador e Gerente de Redes",
+      "description": "Configura e gerencia comunicação e infraestrutura de redes.",
+      "core": [
+        "029",
+        "032",
+        "030",
+        "024",
+        "037"
+      ],
+      "support": [
+        "066",
+        "040",
+        "019",
+        "027"
+      ],
+      "project": "Um projeto de rede com endereçamento, serviços e análise de disponibilidade.",
+      "extra": "Laboratórios de configuração, monitoramento e segurança de redes.",
+      "official": true
+    },
+    {
+      "id": "infra",
+      "name": "Analista de Infraestrutura / Suporte",
+      "description": "Mantém computadores, sistemas operacionais e serviços utilizados por organizações.",
+      "core": [
+        "024",
+        "030",
+        "029"
+      ],
+      "support": [
+        "013",
+        "032",
+        "037",
+        "066",
+        "060"
+      ],
+      "project": "Um ambiente de serviços com documentação de instalação e atendimento.",
+      "extra": "Administração prática de sistemas, diagnóstico e ferramentas de suporte.",
+      "official": false
+    },
+    {
+      "id": "devops",
+      "name": "Profissional de DevOps / SRE",
+      "description": "Integra desenvolvimento e operação, com atenção à confiabilidade dos serviços.",
+      "core": [
+        "041",
+        "030",
+        "037",
+        "029",
+        "103"
+      ],
+      "support": [
+        "085",
+        "017",
+        "022",
+        "066",
+        "040"
+      ],
+      "project": "Um processo automatizado de entrega com testes e acompanhamento de falhas.",
+      "extra": "CI/CD, infraestrutura como código, observabilidade e confiabilidade em produção.",
+      "official": false
+    },
+    {
+      "id": "cloud",
+      "name": "Profissional de Computação em Nuvem",
+      "description": "Planeja e opera aplicações e serviços distribuídos em infraestrutura de nuvem.",
+      "core": [
+        "037",
+        "030",
+        "029",
+        "041"
+      ],
+      "support": [
+        "032",
+        "066",
+        "016",
+        "019",
+        "040"
+      ],
+      "project": "Uma arquitetura de serviço com comunicação e estratégia de tolerância a falhas.",
+      "extra": "Plataformas de nuvem, custos, identidade, redes virtuais e implantação prática.",
+      "official": false
+    },
+    {
+      "id": "seguranca",
+      "name": "Analista de Segurança da Informação",
+      "description": "Ajuda a proteger sistemas, dados e infraestrutura, avaliando riscos.",
+      "core": [
+        "037",
+        "030",
+        "029",
+        "044",
+        "019"
+      ],
+      "support": [
+        "032",
+        "016",
+        "041",
+        "103",
+        "066"
+      ],
+      "project": "Uma análise de riscos e medidas de proteção de um sistema distribuído.",
+      "extra": "Segurança aplicada, criptografia e laboratórios específicos; não há disciplina própria de segurança no conjunto fornecido.",
+      "official": false
+    },
+    {
+      "id": "webdesigner",
+      "name": "Web Designer",
+      "description": "Projeta apresentação e interação de páginas e experiências web.",
+      "core": [
+        "023",
+        "026"
+      ],
+      "support": [
+        "070",
+        "104",
+        "007",
+        "017"
+      ],
+      "project": "Um site com protótipos, identidade visual e avaliação de uso.",
+      "extra": "Design visual, tipografia, acessibilidade e prática com ferramentas de prototipação.",
+      "official": true
+    },
+    {
+      "id": "ux",
+      "name": "Profissional de UX/UI e Acessibilidade",
+      "description": "Pesquisa necessidades dos usuários e projeta interfaces compreensíveis e inclusivas.",
+      "core": [
+        "026",
+        "023",
+        "044"
+      ],
+      "support": [
+        "002",
+        "104",
+        "070",
+        "025",
+        "017"
+      ],
+      "project": "Um protótipo avaliado com usuários e registro de melhorias de usabilidade.",
+      "extra": "Pesquisa com usuários, design visual e avaliação de acessibilidade.",
+      "official": false
+    },
+    {
+      "id": "jogos",
+      "name": "Desenvolvedor de Jogos",
+      "description": "Programa regras, interação e comportamento de jogos digitais.",
+      "core": [
+        "085",
+        "010",
+        "015",
+        "097",
+        "070",
+        "034"
+      ],
+      "support": [
+        "021",
+        "026",
+        "096",
+        "095",
+        "038",
+        "101"
+      ],
+      "project": "Um jogo com colisões, animação e comportamento de personagens.",
+      "extra": "Motores de jogos, produção de assets e publicação de jogos.",
+      "official": false
+    },
+    {
+      "id": "graficos",
+      "name": "Desenvolvedor de Computação Gráfica / Visão Computacional",
+      "description": "Cria sistemas que geram gráficos ou processam e interpretam imagens.",
+      "core": [
+        "070",
+        "095",
+        "021",
+        "085"
+      ],
+      "support": [
+        "034",
+        "068",
+        "079",
+        "097",
+        "022",
+        "101"
+      ],
+      "project": "Um experimento de segmentação de imagens ou visualização 3D.",
+      "extra": "Bibliotecas gráficas, visão computacional e validação em um domínio específico.",
+      "official": false
+    },
+    {
+      "id": "robotica",
+      "name": "Desenvolvedor de Software para Robótica",
+      "description": "Programa controle e integra sensores e atuadores em robôs.",
+      "core": [
+        "099",
+        "013",
+        "085",
+        "010"
+      ],
+      "support": [
+        "098",
+        "034",
+        "096",
+        "024",
+        "021",
+        "101"
+      ],
+      "project": "Um robô elementar que lê sensores e responde a obstáculos.",
+      "extra": "Eletrônica prática, integração física e plataformas robóticas.",
+      "official": false
+    },
+    {
+      "id": "automacao",
+      "name": "Desenvolvedor de Sistemas para Automação",
+      "description": "Integra software e supervisão de processos industriais.",
+      "core": [
+        "098",
+        "013",
+        "085",
+        "024"
+      ],
+      "support": [
+        "099",
+        "029",
+        "036",
+        "037",
+        "010"
+      ],
+      "project": "Um protótipo de supervisão ou controle de um processo simples.",
+      "extra": "CLPs, protocolos industriais e conhecimento do processo a automatizar.",
+      "official": false
+    },
+    {
+      "id": "edtech",
+      "name": "Desenvolvedor / Gestor de Tecnologia Educacional",
+      "description": "Cria ou mantém plataformas e sistemas de apoio à aprendizagem.",
+      "core": [
+        "067",
+        "023",
+        "026",
+        "017"
+      ],
+      "support": [
+        "078",
+        "104",
+        "097",
+        "029",
+        "030",
+        "070"
+      ],
+      "project": "Um ambiente de aprendizagem com atividades e avaliação de acessibilidade.",
+      "extra": "Prática com plataformas educacionais e estudo de processos pedagógicos.",
+      "official": false
+    },
+    {
+      "id": "compiladores",
+      "name": "Desenvolvedor de Compiladores e Ferramentas de Linguagem",
+      "description": "Trabalha com análise de linguagens e ferramentas que transformam programas.",
+      "core": [
+        "028",
+        "038",
+        "015",
+        "020",
+        "085"
+      ],
+      "support": [
+        "064",
+        "022",
+        "041",
+        "027"
+      ],
+      "project": "Um analisador de uma linguagem simples com gramática e mensagens de erro.",
+      "extra": "Construção de compiladores e estudo aprofundado de linguagens de programação.",
+      "official": false
+    },
+    {
+      "id": "gestor",
+      "name": "Gerente de Área de Sistemas de Informação",
+      "description": "Coordena pessoas, recursos e decisões de TI em uma organização.",
+      "core": [
+        "019",
+        "011",
+        "040",
+        "036"
+      ],
+      "support": [
+        "094",
+        "025",
+        "060",
+        "059",
+        "073",
+        "035",
+        "074"
+      ],
+      "project": "Um plano de TI com prioridades, indicadores e gestão de serviços.",
+      "extra": "Experiência de liderança, gestão financeira e atuação organizacional.",
+      "official": true
+    },
+    {
+      "id": "projetos",
+      "name": "Gerente de Projetos",
+      "description": "Organiza equipes, entregas, custos e riscos para atingir os objetivos de um projeto.",
+      "core": [
+        "040",
+        "049",
+        "017",
+        "019"
+      ],
+      "support": [
+        "025",
+        "094",
+        "103",
+        "078",
+        "035",
+        "060"
+      ],
+      "project": "Um plano de projeto com cronograma, riscos e acompanhamento das entregas.",
+      "extra": "Experiência com equipes, comunicação e métodos de gerenciamento.",
+      "official": true
+    },
+    {
+      "id": "produto",
+      "name": "Analista / Gestor de Produto Digital",
+      "description": "Relaciona necessidades dos usuários, estratégia e evolução de produtos digitais.",
+      "core": [
+        "036",
+        "026",
+        "017",
+        "102",
+        "054"
+      ],
+      "support": [
+        "040",
+        "075",
+        "019",
+        "031",
+        "025",
+        "057"
+      ],
+      "project": "Uma proposta de produto com problema, protótipo e indicadores de resultado.",
+      "extra": "Descoberta de produto, priorização e validação com usuários e organizações.",
+      "official": false
+    },
+    {
+      "id": "consultor",
+      "name": "Consultor em Sistemas de Informação",
+      "description": "Diagnostica problemas e propõe soluções de TI para clientes e organizações.",
+      "core": [
+        "081",
+        "019",
+        "036",
+        "017",
+        "011"
+      ],
+      "support": [
+        "060",
+        "035",
+        "075",
+        "059",
+        "040"
+      ],
+      "project": "Um diagnóstico de TI com alternativas, justificativa e plano de implementação.",
+      "extra": "Experiência em um domínio, negociação e avaliação de soluções.",
+      "official": true
+    },
+    {
+      "id": "empreendedor",
+      "name": "Empresário na Área de Sistemas de Informação",
+      "description": "Cria e administra negócios baseados em produtos e serviços de tecnologia.",
+      "core": [
+        "102",
+        "011",
+        "018",
+        "054",
+        "017"
+      ],
+      "support": [
+        "035",
+        "057",
+        "081",
+        "060",
+        "075",
+        "040",
+        "083",
+        "084"
+      ],
+      "project": "Um plano de negócio com proposta de valor e protótipo de uma solução.",
+      "extra": "Validação com clientes, finanças, vendas e execução de projetos reais.",
+      "official": true
+    },
+    {
+      "id": "pesquisador",
+      "name": "Pesquisador / Carreira Acadêmica",
+      "description": "Investiga problemas de computação e compartilha resultados científicos.",
+      "core": [
+        "002",
+        "091",
+        "092"
+      ],
+      "support": [
+        "003",
+        "006",
+        "008",
+        "038",
+        "034",
+        "031",
+        "064",
+        "096",
+        "101"
+      ],
+      "project": "Uma pesquisa com pergunta, revisão de literatura, experimento e resultados.",
+      "extra": "Pós-graduação e formação específica para pesquisa ou docência, conforme os requisitos da atuação.",
+      "official": true
+    },
+    {
+      "id": "sustentabilidade",
+      "name": "Analista de Sistemas Aplicados à Sustentabilidade",
+      "description": "Aplica informação e tecnologia a processos e decisões com impacto ambiental.",
+      "core": [
+        "055",
+        "050",
+        "036",
+        "019"
+      ],
+      "support": [
+        "016",
+        "031",
+        "102",
+        "074",
+        "068"
+      ],
+      "project": "Um sistema de acompanhamento de resíduos ou indicadores ambientais.",
+      "extra": "Conhecimento do domínio ambiental e ferramentas para gestão de dados e processos.",
+      "official": false
+    }
+  ],
+  "transversal": [
+    "044",
+    "007",
+    "003",
+    "002",
+    "091",
+    "092",
+    "PI",
+    "AC"
+  ],
+  "sources": {
+    "ppc": "https://www.ifmg.edu.br/ourobranco/PPC_BSI_2020_NOTURNOVFinal.pdf",
+    "ementario": "https://www.ifmg.edu.br/ourobranco/nossos-cursos/graduacao-6/Ementario_BSI_2020.pdf",
+    "matriz": "https://www.ifmg.edu.br/ourobranco/pdf/MatrizOrganograma.pdf"
+  }
+};

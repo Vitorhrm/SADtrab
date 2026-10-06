@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Explore as disciplinas e possibilidades de carreira do Bacharelado em Sistemas de Informação do IFMG campus Ouro Branco, com base no PPC e nas ementas.">
+  <meta name="theme-color" content="#147d71">
+  <title>Conexões SI · IFMG Ouro Branco</title>
+  <link rel="icon" href="./favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="./style.css">
+  <link rel="stylesheet" href="./discovery.css">
+  <script src="./data.js" defer></script>
+  <script src="./discovery.js" defer></script>
+  <script src="./app.js" defer></script>
+</head>
+<body>
+  <a class="skip" href="#explorar">Pular para o mapa</a>
+  <header class="header">
+    <a href="./" class="brand" aria-label="Conexões SI, início"><span class="brand-icon" aria-hidden="true">⌘</span><span>conexões<span class="brand-si"> SI</span><small>IFMG · OURO BRANCO</small></span></a>
+    <nav aria-label="Navegação principal">
+      <a href="#explorar" class="nav-link">Explorar o mapa</a>
+      <button class="nav-link" data-view="profissoes">Profissões</button>
+      <button class="nav-link" data-view="fontes">Sobre e fontes</button>
+    </nav>
+    <button id="theme" class="icon-button" aria-label="Alternar tema escuro" title="Alternar tema">◐</button>
+  </header>
+  <main>
+    <section class="hero">
+      <div class="hero-copy">
+        <p class="eyebrow"><span class="live-dot"></span> SISTEMAS DE INFORMAÇÃO · IFMG OURO BRANCO</p>
+        <h1>O que dá para fazer com<br><span>Sistemas de Informação?</span></h1>
+        <p class="intro">Conheça as matérias do curso e veja onde você pode usar o que aprendeu. Se você já pensa em uma profissão, comece por ela. Se ainda não sabe, escolha as matérias que parecem interessantes.</p>
+        <a class="primary" href="#explorar">Conhecer as profissões e matérias <span aria-hidden="true">↗</span></a>
+        <p class="hero-foot">Bacharelado · IFMG campus Ouro Branco · Base documental 2020</p>
+      </div>
+      <div class="hero-art" aria-hidden="true">
+        <div class="orbit orbit-one"></div><div class="orbit orbit-two"></div>
+        <svg viewBox="0 0 460 300"><path d="M230 145 L92 58 M230 145 L370 62 M230 145 L400 199 M230 145 L288 262 M230 145 L78 216"/></svg>
+        <div class="art-node art-code"><span>〈/〉</span>Desenvolvimento</div>
+        <div class="art-node art-data"><span>▤</span>Dados & IA</div>
+        <div class="art-node art-net"><span>⌁</span>Infraestrutura</div>
+        <div class="art-node art-business"><span>↗</span>Gestão & negócios</div>
+        <div class="art-node art-design"><span>✧</span>Design & experiência</div>
+        <div class="art-center"><span>SI</span><small>O ponto de partida</small></div>
+        <span class="art-label">MATÉRIAS DO CURSO<br>E POSSIBILIDADES DE TRABALHO.</span>
+      </div>
+    </section>
+    <div class="stats" aria-label="Visão geral do mapa">
+      <div><strong>08</strong><span>semestres de formação</span></div>
+      <div><strong>12</strong><span>áreas para explorar</span></div>
+      <div><strong>74</strong><span>disciplinas mapeadas</span></div>
+      <div><strong>35</strong><span>possibilidades de carreira</span></div>
+    </div>
+    <section id="explorar" class="explorer" aria-labelledby="explore-title">
+      <div class="section-heading"><div><p class="eyebrow">EXPLORE AS POSSIBILIDADES</p><h2 id="explore-title">Por onde você quer começar?</h2><p>Escolha uma profissão ou descubra possibilidades a partir das matérias que você gosta.</p></div><button id="reset" class="subtle">↺ Limpar filtros</button></div>
+      <div class="tabs" role="tablist" aria-label="Modo de exploração">
+        <button id="tab-profissoes" role="tab" aria-controls="view" aria-selected="true" data-view="profissoes">↗ Já tenho uma profissão em mente</button>
+        <button id="tab-interesses" role="tab" aria-controls="view" aria-selected="false" data-view="interesses">✧ Quero descobrir pelas matérias</button>
+        <button id="tab-matriz" role="tab" aria-controls="view" aria-selected="false" data-view="matriz">▦ Por semestre</button>
+        <button id="tab-fontes" role="tab" aria-controls="view" aria-selected="false" data-view="fontes">≡ Sobre e fontes</button>
+      </div>
+      <div id="filters" class="filters">
+        <label class="search"><span aria-hidden="true">⌕</span><input id="search" type="search" placeholder="Busque por disciplina, área ou carreira…" aria-label="Buscar disciplina, área ou carreira"></label>
+        <label class="select-label">Período<select id="period"><option value="">Todos os períodos</option></select></label>
+        <label class="select-label">Tipo<select id="type"><option value="">Todos os tipos</option><option value="obrigatoria">Obrigatórias</option><option value="optativa">Optativas</option><option value="componente">Componentes</option></select></label>
+        <button id="saved" class="subtle" aria-pressed="false">☆ Favoritas <span id="saved-count">0</span></button>
+      </div>
+      <div id="context" class="context"></div>
+      <div id="view" role="tabpanel" aria-labelledby="tab-profissoes"></div>
+      <div class="map-caption"><span><i class="legend-dot"></i> Relação de formação</span><span><i class="legend-outline"></i> Disciplina optativa</span><span>Conexões não representam pré-requisitos.</span></div>
+    </section>
+    <section class="callout"><span class="callout-icon" aria-hidden="true">✧</span><div><h3>Ainda não sabe qual profissão escolher?</h3><p>Selecione as matérias que despertam sua curiosidade. Veja quais profissões se conectam a esses interesses e explore a formação de cada uma.</p></div><button class="subtle" data-view="interesses">Descobrir pelas matérias ↗</button></section>
+  </main>
+  <footer><span class="footer-brand">conexões SI</span><p>Projeto estudantil · Sistemas de Informação<br>IFMG campus Ouro Branco</p><button class="primary" data-view="fontes">Consultar fontes oficiais ↗</button></footer>
+  <dialog id="detail" aria-labelledby="detail-title"><div class="dialog-header"><span class="eyebrow">EXPLORE A CONEXÃO</span><button id="close-detail" class="icon-button" aria-label="Fechar detalhes">×</button></div><div id="detail-body"></div></dialog>
+  <div id="compare-bar" class="compare-bar" hidden><span id="compare-label"></span><button id="compare-open" class="primary">Comparar</button><button id="compare-clear" class="subtle">Limpar</button></div>
+  <p id="announcement" class="sr-only" aria-live="polite"></p>
+  <noscript><p class="notice">Ative o JavaScript para explorar as conexões. Os dados também estão disponíveis em <a href="./dados.json">dados.json</a>.</p></noscript>
+</body>
+</html>
