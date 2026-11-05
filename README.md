@@ -2,6 +2,8 @@
 
 Mapa interativo das disciplinas e possibilidades de carreira do Bacharelado em Sistemas de Informação do IFMG, campus Ouro Branco. É um projeto estudantil independente.
 
+[Abrir demonstração no GitHub Pages](https://vitorhrm.github.io/SADtrab/)
+
 ## O que explorar
 
 - Disciplinas obrigatórias e optativas, organizadas por período.
